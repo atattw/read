@@ -12,7 +12,7 @@
 <script>
 var k; 
 function getcode(s) {var h=document.createElement('script'); spin.hidden=false; k=s; h.src='https://script.google.com/macros/s/AKfycbxYV353iKOLqsSrXX3_GDHMxZCSgrc1uohDp1eWkzd5xPkwXrM/exec?callback=setcode&PaymentNo=LLL'+parseInt(document.location.pathname.slice(1), 36); document.body.appendChild(h); } 
-function setcode(s) {spin.hidden=true; clue.innerHTML=s.replace(/<[^<]+綠界[^<]+<\/[^>]+>/, ''); divFam.style.display=null; divHilife.style.display=null; if (k=='Family') {divHilife.hidden=true; } else if (k=='HiLife') {divFam.hidden=true; } } 
+function setcode(s) {spin.hidden=true; clue.innerHTML=s.replace(/<[^<]+綠界[^<]+<\/[^>]+>/g, ''); divFam.style.display=null; divHilife.style.display=null; if (k=='Family') {divHilife.hidden=true; } else if (k=='HiLife') {divFam.hidden=true; } } 
 </script>
 </body>
 </html>
